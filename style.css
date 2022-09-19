@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  width: 1440px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70.31px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46.88px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 2rem 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Nav + Header + Section Presentation */
+
+.logo {
+  padding: 1rem 0 1rem 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-end;
+  padding: 2rem 10rem 0 10rem;
+}
+
+nav ul li {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+  color: #6b708d;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding: 1rem 0 1rem 0;
+}
+
+.navList a:hover {
+  color: #072ac8;
+}
+
+nav button {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+  color: #fff;
+}
+
+button {
+  background-color: #072ac8;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+}
+
+a {
+  text-decoration: none;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+}
+
+.img-credito {
+  position: absolute;
+  height: 55%;
+  left: 629px;
+  top: 170px;
+}
+
+.img-emoticono {
+  position: absolute;
+  height: 55%;
+  left: 1012px;
+  top: 600px;
+}
+
+.img-chico {
+  width: 570px;
+  height: 650px;
+  left: 700px;
+  top: 0px;
+}
+
+.presentation-content {
+  width: 50%;
+  margin-left: 10rem;
+}
+
+.presentation-content p {
+  padding: 2rem 7.8rem 2rem 0;
+}
+
+.presentation-content button {
+  margin: 1rem 2rem 0 0;
+}
+
+.presentation-img {
+  width: 50%;
+  margin-right: 10rem;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Section clients */
+
+#clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 8rem 10rem;
+}
+
+#clients img {
+  filter: grayscale(100%);
+}
+
+/* Section projects */
+
+#projects {
+  padding: 8rem 10rem;
+}
+
+#projects .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img {
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 33%;
+}
+
+.card-1 {
+  background-color: aqua;
+}
+
+.card-2 {
+  background-color: #072ac8;
+}
+
+.card-3 {
+  background-color: red;
+}
