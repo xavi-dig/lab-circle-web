@@ -221,7 +221,7 @@ a {
   grid-template-rows: repeat(3, auto);
   justify-content: center;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 3rem 9.3rem;
   margin: 0rem 1rem 7rem 1rem;
   background-color: #292e47;
 }
