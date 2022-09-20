@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #f4f6fc;
   width: 1440px;
 }
 
@@ -351,7 +351,7 @@ a {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  gap: 1%;
+  gap: 2%;
   margin: 0rem 15rem;
   padding-bottom: 6.8rem;
 }
@@ -364,4 +364,58 @@ a {
   line-height: 22.1px;
   background: url(./assets/newsletter/icon/mail.svg) no-repeat 5% 50%;
   background-color: #fff;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+}
+
+.f-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.f-content img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+.f-content address {
+  color: #6b708d;
+  line-height: 25.5px;
+  font-style: normal;
+}
+
+.f-links {
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20%;
+  column-gap: 20%;
+  justify-content: space-between;
+}
+
+.f-links-bot {
+  align-self: flex-end;
+}
+
+.f-links-top {
+  align-self: flex-start;
+}
+
+.f-links a {
+  text-decoration: none;
+  color: #6b708d;
+}
+
+.f-links a:hover {
+  color: #072ac8;
 }
