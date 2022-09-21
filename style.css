@@ -5,6 +5,19 @@
   border-width: 0;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 479px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media screen and (max-width: 991px) {
 }
 
 body {
@@ -46,7 +59,7 @@ ul li {
   padding: 1rem 0 1rem 0;
 }
 
-nav {
+.container-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -400,7 +413,7 @@ footer {
   flex-wrap: wrap;
   row-gap: 20%;
   column-gap: 20%;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .f-links-bot {
@@ -418,4 +431,77 @@ footer {
 
 .f-links a:hover {
   color: #072ac8;
+}
+
+#menu,
+#menu-check {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    display: block;
+  }
+
+  .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .presentation-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .presentation-content {
+    margin-left: 0rem;
+  }
+
+  .presentation-content p {
+    text-align: center;
+  }
+
+  .presentation-content button {
+    margin: 0rem 2rem 0 0;
+  }
+
+  .presentation-img {
+    width: auto;
+    margin-right: 0rem;
+  }
+
+  .img-credito {
+    position: absolute;
+    height: 50%;
+    left: 285px;
+    top: 401px;
+  }
+
+  .img-emoticono {
+    position: absolute;
+    height: 50%;
+    left: 820px;
+    top: 890px;
+  }
+
+  #clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10rem;
+  }
 }
