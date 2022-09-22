@@ -8,12 +8,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (max-width: 479px) {
-}
-
 @media (min-width: 768px) {
 }
 
@@ -486,7 +480,7 @@ footer {
   .img-credito {
     position: absolute;
     height: 50%;
-    left: 285px;
+    left: 385px;
     top: 401px;
   }
 
@@ -497,11 +491,166 @@ footer {
     top: 890px;
   }
 
+  .img-chico {
+    margin-top: 1rem;
+  }
+
   #clients {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+
+  #clients img {
+    width: 35%;
+  }
+
+  #projects .cards,
+  #services .cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 10rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2.5rem;
+    padding: 4.2rem 0;
+  }
+
+  #projects,
+  #services {
+    padding: 3rem 10rem 0rem 10rem;
+  }
+
+  #testimonial h2 {
+    max-width: 75%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .emoji-1,
+  .emoji-3 {
+    justify-self: flex-end;
+  }
+
+  .emoji-2,
+  .emoji-4 {
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .img-credito {
+    display: none;
+  }
+
+  .img-emoticono {
+    display: none;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 100%;
+  }
+
+  .card-1 .project-1,
+  .card-2 .project-2,
+  .card-3 .project-3 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .emoji-1,
+  .emoji-3,
+  .emoji-2,
+  .emoji-4 {
+    display: none;
+  }
+
+  #testimonial h2 {
+    max-width: 50%;
+  }
+
+  #testimonial > p {
+    justify-self: center;
+    width: 50%;
+  }
+
+  #testimonial {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  #testimonial h2 {
+    text-align: center;
+  }
+
+  .subscribe {
+    grid-template-columns: 2fr;
+    grid-row-gap: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .f-content {
+    align-items: center;
+  }
+
+  .f-links {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 1rem;
+  }
+
+  #newsletter {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .presentation-content {
+    width: 70%;
+    text-align: center;
+  }
+
+  .presentation-content p {
+    padding: 2rem 5rem;
+  }
+
+  #services h2,
+  #projects h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .presentation-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .presentation-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .presentation-content button {
+    margin: 0;
   }
 }
