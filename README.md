@@ -19,3 +19,8 @@ No consigo hacer le menú hamburguesa y pierdo mucho tiempo buscando cómo soluc
 Las mayor dificultad ha sido el menú hamburguesa
 Las adaptaciones de los flex a diferentes tamaños también me suponen un problema
 
+22/09
+Finalizo Responsive de todas las páginas, aunque no consigo solventar algunos pequeños detalles. 
+Me queda arreglar un cambio de media query no contemplado en el que la web se descuadre un poco
+Consigo terminar JS
+

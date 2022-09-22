@@ -13,21 +13,32 @@
         <a class="logo" href="#"
           ><img src="./assets/logos/circle.svg" alt="Circle"
         /></a>
-        <div>
-          <input type="checkbox" id="menu-check" />
-          <label id="menu" for="menu-check">
-            <span id="menu-opened">&#9776;</span>
-            <span id="menu-closed">X</span>
-          </label>
+        <div class="hamburguer">
+          <div class="icon-hamburguer">
+            <hr class="line" />
+            <hr class="line" />
+            <hr class="line" />
+          </div>
+          <div class="mask">
+            <div class="moving-box">
+              <nav>
+                <ul class="">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <nav>
+        <nav class="big-nav">
           <ul class="navList">
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Services</a></li>
           </ul>
         </nav>
-        <button>Contact Us</button>
+        <button class="big-nav">Contact Us</button>
       </div>
     </header>
     <section class="presentation">
@@ -71,20 +82,20 @@
 
     <section id="projects">
       <h2>Recent Projects</h2>
-      <div class="cards">
+      <div id="projectsCards" class="cards">
         <div class="card-1">
           <img class="project-1" src="./assets/projects-section/1.jpg" alt="" />
           <h3>Simplify</h3>
           <p>UI Design & App Development</p>
           <a href="">Learn more</a>
         </div>
-        <div class="card-2">
+        <div class="card-1">
           <img class="project-2" src="./assets/projects-section/2.jpg" alt="" />
           <h3>Dashcoin</h3>
           <p>Web Development</p>
           <a href="">Learn more</a>
         </div>
-        <div class="card-3">
+        <div class="card-1">
           <img class="project-3" src="./assets/projects-section/3.jpg" alt="" />
           <h3>Vectoriy</h3>
           <p>User Experience Design</p>
@@ -144,7 +155,7 @@
           </p>
           <a href="">Learn more</a>
         </div>
-        <div class="card-2">
+        <div class="card-1">
           <div class="icon-2"></div>
           <h3>User Experience Design</h3>
           <p>
@@ -153,7 +164,7 @@
           </p>
           <a href="">Learn more</a>
         </div>
-        <div class="card-3">
+        <div class="card-1">
           <div class="icon-3"></div>
           <h3>Application Development</h3>
           <p>
@@ -195,5 +206,7 @@
         <a class="f-links-bot" href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="hamburguer.js"></script>
   </body>
 </html>
