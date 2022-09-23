@@ -29,22 +29,10 @@ function addPost(preventForm) {
     .then((response) => response.json())
     .then((dataForm) => console.log(dataForm))
     .then(() => {
-      let message = "";
-      message += `
-		   <div id="message2">
-		  <h6>Message Submitted</h6>
-	  </div> 
-		  `;
-      document.querySelector("#message3").innerHTML = message;
+      alert("Your message has been sent!");
     })
     .catch(() => {
-      let message = "";
-      message += `
-			 <div id="message2">
-			<h6>oh oh, there has been an error with your message!</h6>
-		</div> 
-			`;
-      document.querySelector("#message3").innerHTML = message;
+      alert("There is an error with your message!");
     });
 
   document.querySelector("#name").value = "";
